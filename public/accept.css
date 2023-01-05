@@ -1,0 +1,67 @@
+body {
+    background: #fb9db5;
+}
+
+.heart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vh;
+    height: 100vh;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.heart > div {
+    position: absolute;
+    background: #f62357;
+    border-radius: 100%;
+    box-shadow: 0 0 50px #f62357;
+    animation: beat 0.8s infinite ease;
+}
+
+.heart .left {
+    top: 20%;
+    left: 12.5%;
+    width: 44%;
+    height: 44%;
+}
+
+.heart .right {
+    top: 20%;
+    left: 43.5%;
+    width: 44%;
+    height: 44%;
+}
+
+.heart .center {
+    top: 38%;
+    left: 29%;
+    width: 42%;
+    height: 42%;
+    border-radius: 0;
+    transform: rotate(45deg);
+}
+
+.heart .shine {
+    top: 25%;
+    left: 50%;
+    width: 30%;
+    height: 30%;
+    background: linear-gradient(180deg, #fa85a2 0%, #f62357 10%);
+    transform: rotate(45deg);
+}
+
+.heart .cover {
+    top: 26%;
+    left: 53%;
+    width: 26%;
+    height: 26%;
+}
+
+@keyframes beat {
+    30% {
+        transform: scale(1.1)rotate(45deg);
+    }
+}
